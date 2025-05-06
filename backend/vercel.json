@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "backend", 
+    "builds": [
+      { "src": "backend/index.js", "use": "@vercel/node" } // Caminho para o arquivo de entrada do backend
+    ],
+    "routes": [
+      { "src": "/api(.*)", "dest": "backend/index.js" } // Roteia todas as requisições /api para o backend
+    ]
+  }
