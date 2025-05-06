@@ -1,0 +1,5 @@
+@import "tailwindcss";
+* {
+  /* color: gray; */
+  background-color: black;
+}
