@@ -1,11 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "frontend/dist/**/*", "use": "@vercel/static" },
-    { "src": "/api/**/*.js", "use": "@vercel/node" } // Ou **/*.ts se usar TypeScript
-  ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)", "dest": "/frontend/dist/$1" }
+    {
+      "src": "/[^.]+",
+      "dest": "/"
+    }
   ]
 }
