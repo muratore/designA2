@@ -56,7 +56,6 @@ function EditJob() {
 
       return response.data
     } catch (error) {
-      console.log(error);
       msgType='error'
       setFlashMessage(error.response.data.message, msgType )
     }
