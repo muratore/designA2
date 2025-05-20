@@ -19,7 +19,7 @@ const {login} = useContext(AdmContext)
 
     }
   return (
-    <div>
+    <div className="pt-32">
      
       <div className="container flex flex-col mx-auto">
         <Title titulo={"Entrar no Sistem"} />
@@ -44,7 +44,7 @@ const {login} = useContext(AdmContext)
           <input
             type="submit"
             value={"Entrar"}
-            className="bg-zinc-700 hover:bg-zinc-600 px-4 py-2 rounded-sm mt-8"
+            className="bg-zinc-700 cursor-pointer border-2 border-zinc-300 text-white w-48 h-12 hover:bg-zinc-600 px-4 py-2 rounded-sm mt-8"
           />
         </form>
       </div>

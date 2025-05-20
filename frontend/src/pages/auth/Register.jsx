@@ -17,7 +17,7 @@ const {register } = useContext(AdmContext)
 
     }
   return (
-    <div>
+    <div className="pt-32">
         <div className="container flex flex-col mx-auto">
             <Title titulo={"Registrar Admin"}/>
 
@@ -56,7 +56,7 @@ const {register } = useContext(AdmContext)
 <input
             type="submit"
             value={"Cadastrar"}
-            className="bg-zinc-700 hover:bg-zinc-600 px-4 py-2 rounded-sm mt-8"
+            className="bg-zinc-500 border-2 cursor-pointer border-zinc-300 w-48 h-12 text-white hover:bg-zinc-600 px-4 py-2 rounded-sm mt-8"
           />
             </form>
         </div>

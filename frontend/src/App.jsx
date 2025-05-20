@@ -7,7 +7,7 @@ import Sobre from "./pages/Sobre";
 import Footer from "./components/Footer";
 import Portfolio from "./pages/Portfolio";
 import Login from "./pages/auth/Login";
-import Register from "./pages/auth/Register";
+// import Register from "./pages/auth/Register";
 import Message from "./components/layout/Message";
 
 // importação do AdmContext que vai dar acesso a aplicação
@@ -34,7 +34,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/jobs/:id" element={<JobDetails />} />
         {/* <Route path="/portfolio" element={<Portfolio />} /> */}
-        <Route path="/register" element={<Register />} />
+        {/* <Route path="/register" element={<Register />} /> */}
         <Route path="/myjobs" element={<MyJobs />} />
         <Route path="/dashboard/edit/:id" element={<EditJob />} />
         <Route path="/dashboard/add" element={<AddJob />} />
