@@ -17,7 +17,7 @@ const __dirname = path.dirname(__filename);         // Get the directory name
 
 // OR, enable CORS for specific origins (recommended for production):
 const corsOptions = {
-  origin: `${process.env.API}`, // Replace with your frontend's origin
+  origin: `${API}`, // Replace with your frontend's origin
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 app.use(cors(corsOptions));
