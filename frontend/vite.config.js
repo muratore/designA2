@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
+
 // .env cofiguration
 import { config } from 'dotenv';
 config();
@@ -12,5 +13,9 @@ export default defineConfig({
   define: {
     // eslint-disable-next-line no-undef
     'process.env': process.env
-  }
+  },
+   build: {
+    outDir: 'dist', // Onde os arquivos buildados serão colocados
+    emptyOutDir: true, // Limpa o diretório de saída antes de cada build
+  },
 });
